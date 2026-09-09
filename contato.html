@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato &amp; Reservas | Lazzarini Buffet</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "primary": "#610000",
+                      "surface-container-high": "#e9e8e7",
+                      "on-primary-fixed": "#410000",
+                      "inverse-primary": "#ffb4a8",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "outline-variant": "#e3beb8",
+                      "surface-container-low": "#f5f3f3",
+                      "on-surface-variant": "#5a403c",
+                      "secondary-fixed-dim": "#c8c7b7",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "inverse-surface": "#303031",
+                      "secondary": "#5f5f52",
+                      "secondary-container": "#e2e0d0",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#ffdad4",
+                      "tertiary-container": "#434242",
+                      "surface-container": "#efeded",
+                      "surface-container-highest": "#e3e2e2",
+                      "surface": "#fbf9f9",
+                      "on-surface": "#1b1c1c",
+                      "outline": "#8e706b",
+                      "surface-variant": "#e3e2e2",
+                      "primary-fixed-dim": "#ffb4a8",
+                      "surface-bright": "#fbf9f9",
+                      "secondary-fixed": "#e5e3d3",
+                      "on-primary-fixed-variant": "#920703",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#636356",
+                      "on-primary-container": "#ff907f",
+                      "surface-tint": "#b52619",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#2c2c2c",
+                      "on-secondary-fixed-variant": "#47473b",
+                      "on-background": "#1b1c1c",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "background": "#fbf9f9",
+                      "surface-dim": "#dbdad9",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "on-secondary-fixed": "#1c1c12",
+                      "primary-container": "#8b0000",
+                      "on-tertiary-container": "#b1aeae",
+                      "tertiary-fixed": "#e5e2e1",
+                      "inverse-on-surface": "#f2f0f0",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "32px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "label-sm": [
+                              "Montserrat"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        /* Custom input autofill styles to maintain minimalism */
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+            -webkit-text-fill-color: #1b1c1c !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out hidden md:flex">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed italic">
+            Lazzarini Buffet
+        </div>
+<ul class="flex gap-8 font-body-md text-body-md uppercase tracking-widest">
+<li>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="home.html">Home</a>
+</li>
+<li>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="gastronomia.html">Gastronomia</a>
+</li>
+<li>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="nossoespaco.html">Nosso Espaço</a>
+</li>
+<li>
+<!-- Active Navigation Item based on semantic intent -->
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Contato</a>
+</li>
+</ul>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-none hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm">
+            Reserve Agora
+        </button>
+</nav>
+<!-- Mobile Nav Fallback (Minimal) -->
+<nav class="md:hidden fixed top-0 left-0 w-full z-50 flex justify-center items-center px-margin-mobile h-20 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary italic">
+            Lazzarini Buffet
+        </div>
+</nav>
+<main class="pt-32 md:pt-48 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Section -->
+<header class="mb-20 text-center md:text-left md:max-w-3xl">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">Entre em Contato</h1>
+<p class="font-body-lg text-body-lg text-secondary">Inicie o planejamento do seu evento inesquecível. Permita-nos traduzir sua visão em uma experiência gastronômica impecável e sofisticada.</p>
+</header>
+<!-- Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Form Column -->
+<div class="lg:col-span-7 lg:pr-12">
+<form class="flex flex-col space-y-10">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2" for="name">Nome Completo</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 text-on-background focus:ring-0 focus:border-primary transition-colors placeholder:text-outline-variant font-body-md" id="name" name="name" placeholder="Seu nome" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2" for="date">Data do Evento</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 text-on-background focus:ring-0 focus:border-primary transition-colors font-body-md" id="date" name="date" required="" type="date"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2" for="guests">Convidados Estimados</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 text-on-background focus:ring-0 focus:border-primary transition-colors placeholder:text-outline-variant font-body-md" id="guests" min="10" name="guests" placeholder="Ex: 150" required="" type="number"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2" for="event_type">Tipo de Evento</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-3 text-on-background focus:ring-0 focus:border-primary transition-colors font-body-md appearance-none" id="event_type" name="event_type" required="">
+<option class="text-outline-variant" disabled="" selected="" value="">Selecione uma categoria</option>
+<option value="casamento">Casamento</option>
+<option value="corporativo">Corporativo</option>
+<option value="social">Social / Aniversário</option>
+<option value="outro">Outro</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2" for="message">Detalhes Adicionais</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-3 text-on-background focus:ring-0 focus:border-primary transition-colors placeholder:text-outline-variant font-body-md resize-none" id="message" name="message" placeholder="Conte-nos um pouco sobre a atmosfera desejada..." rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-[16px] py-[24px] rounded-none hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-sm hover:shadow-md w-full md:w-auto inline-flex items-center justify-center gap-2 group relative overflow-hidden" type="submit">
+<span class="relative z-10">Solicitar Orçamento</span>
+<span class="material-symbols-outlined relative z-10 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="absolute inset-0 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+</button>
+</div>
+</form>
+</div>
+<!-- Info Column -->
+<div class="lg:col-span-5 mt-16 lg:mt-0 flex flex-col">
+<!-- Lead Time Notice -->
+<div class="border border-outline-variant/60 bg-surface-container-lowest p-8 mb-12 relative group hover:border-outline-variant transition-colors">
+<div class="absolute -top-3 -left-3 text-primary bg-background px-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_clock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Planejamento Antecipado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Para garantir a excelência Lazzarini em datas de alta temporada (primavera e outono), recomendamos uma antecedência de <strong class="text-primary font-semibold">12 a 18 meses</strong> no contato inicial.</p>
+</div>
+<div class="w-full h-px bg-outline-variant/30 mb-12"></div>
+<!-- Contact Info & Map -->
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-outline mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-1">Localização</h4>
+<p class="font-body-md text-body-md text-on-surface">Guaratinguetá, São Paulo<br/>Atendemos Vale do Paraíba e Região</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-outline mt-1" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-1">Social</h4>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2" href="#">
+                                @lazzarinibuffet
+                                <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="mt-8 border border-outline-variant/30 bg-surface-container overflow-hidden relative" style="height: 240px;">
+<img alt="Map placeholder" class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale mix-blend-multiply" data-alt="A sophisticated, minimalist map visualization focused on Guaratinguetá, Brazil. The map utilizes a high-end luxury color palette featuring light cream backgrounds. Geographic details and roads are represented by subtle, precise hairline strokes in muted gold and deep burgundy. The aesthetic is strictly editorial, completely avoiding bright colors, dense labels, or standard mapping interface clutter, maintaining an elegant, quiet presence." data-location="Guaratinguetá, São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcz20GcN6sBKavXYQgEFeaA6TsweQkaLNu0dnemhHMJtzKEpZKxhwlqVSh6A3ORE-G7YdoXN0voDFh7q3FURh_PLEECyQOlDGQCEXiR02Iw2oEoHP7Dak_7tAjG7iXfeUAS44giEDbz9nI0tAaTIGGFBaA2s4hvTBbaJ8LMFXarktXFYluq7-ZQ5jyqbnzCeJkNxgPjVcJeiZS7_Wi36c3SNyxSANCS-I1YGDm5e7GB8NqTArQeRiFY_LwRnKHiCfnz5rw5UZ4nC_9"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary-container shadow-lg"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter bg-tertiary dark:bg-tertiary-container border-t border-outline/20 opacity-90 hover:opacity-100 transition-opacity mt-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-on-tertiary">Lazzarini Buffet</span>
+<p class="font-body-md text-body-md text-tertiary-fixed-dim">© 2026 Lazzarini Buffet &amp; Eventos de Alto Padrão.</p>
+</div>
+<div class="md:col-span-2 flex flex-col md:flex-row md:justify-end gap-8 md:gap-16">
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">Instagram</a>
+</li>
+<li>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">WhatsApp</a>
+</li>
+</ul>
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">LinkedIn</a>
+</li>
+<li>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">Política de Privacidade</a>
+</li>
+</ul>
+</div>
+</footer>
+</body></html>

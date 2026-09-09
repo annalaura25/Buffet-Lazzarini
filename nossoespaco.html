@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosso Espaço - Lazzarini Buffet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "primary": "#610000",
+                      "surface-container-high": "#e9e8e7",
+                      "on-primary-fixed": "#410000",
+                      "inverse-primary": "#ffb4a8",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "outline-variant": "#e3beb8",
+                      "surface-container-low": "#f5f3f3",
+                      "on-surface-variant": "#5a403c",
+                      "secondary-fixed-dim": "#c8c7b7",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "inverse-surface": "#303031",
+                      "secondary": "#5f5f52",
+                      "secondary-container": "#e2e0d0",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#ffdad4",
+                      "tertiary-container": "#434242",
+                      "surface-container": "#efeded",
+                      "surface-container-highest": "#e3e2e2",
+                      "surface": "#fbf9f9",
+                      "on-surface": "#1b1c1c",
+                      "outline": "#8e706b",
+                      "surface-variant": "#e3e2e2",
+                      "primary-fixed-dim": "#ffb4a8",
+                      "surface-bright": "#fbf9f9",
+                      "secondary-fixed": "#e5e3d3",
+                      "on-primary-fixed-variant": "#920703",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#636356",
+                      "on-primary-container": "#ff907f",
+                      "surface-tint": "#b52619",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#2c2c2c",
+                      "on-secondary-fixed-variant": "#47473b",
+                      "on-background": "#1b1c1c",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "background": "#fbf9f9",
+                      "surface-dim": "#dbdad9",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "on-secondary-fixed": "#1c1c12",
+                      "primary-container": "#8b0000",
+                      "on-tertiary-container": "#b1aeae",
+                      "tertiary-fixed": "#e5e2e1",
+                      "inverse-on-surface": "#f2f0f0",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "32px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "label-sm": [
+                              "Montserrat"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Custom scrollbar for an elegant feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fbf9f9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e3beb8; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8e706b; 
+        }
+        
+        /* Ambient hover effect utility */
+        .hover-ambient-shadow:hover {
+            box-shadow: 0 10px 30px -10px rgba(139, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out">
+<div class="font-headline-lg text-headline-lg md:text-headline-lg text-primary dark:text-primary-fixed italic tracking-tight">
+            Lazzarini Buffet
+        </div>
+<nav class="hidden md:flex items-center gap-10 font-body-md text-body-md uppercase tracking-widest">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="home.html">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="gastronomia.html">Gastronomia</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed duration-300" href="nossoespaco.html">Nosso Espaço</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="contato.html">Contato</a>
+</nav>
+<button class="hidden md:inline-flex bg-primary text-on-primary px-6 py-4 rounded-none font-label-sm uppercase tracking-wider hover:bg-on-primary-fixed-variant transition-colors items-center justify-center">
+            Reserve Agora
+        </button>
+<!-- Mobile Menu Icon (Decorative for this scope) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-12 pb-24">
+<div class="relative w-full h-[60vh] md:h-[75vh] bg-surface-container-high border border-outline-variant/40 overflow-hidden group">
+<img alt="Lazzarini Venue interior showcasing modern glass walls and rustic wooden beams" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfdrqHHQ09xq19BCR9aPmmvHiWZBD6-y2TPj24xvDshnsKLmA68CZ-4z9_fAoXVKWdWCkx0AGbBdCMBhVlyctekIuwbn_7yEphamXtGA9-Njpf7eoxTFBmTImGMIcbpEhv2CiH0L5wSU8C8EAtbWI6xhsFdLZttwWN7-BGbmqRQD_WJAJpX65AW0T_uK5QAuNEV8Y9CX5TNPLsHHoa4LqSK7BgflwNaHw9x1jyjwFPCWWK5PB8gw6JqIw7wOf61gLefCKr772JkQhm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 bg-surface border border-outline-variant p-8 md:p-16 max-w-3xl -mt-16 md:-mt-32 mx-4 md:ml-12 shadow-sm">
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4">Guaratinguetá, SP</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">O Nosso Espaço</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Uma fusão perfeita entre a arquitetura contemporânea e a sofisticação rústica. Desenhado para acolher momentos inesquecíveis, nosso salão principal oferece uma tela em branco banhada por luz natural, emoldurada pela exuberância da natureza.
+                </p>
+</div>
+</section>
+<!-- Concept & Infrastructure Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Arquitetura &amp; Conforto</h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface-variant">
+<p>
+                            Localizado no coração do Vale do Paraíba, o espaço Lazzarini foi concebido para elevar o padrão da hospitalidade. A estrutura em aço corten e os imensos panos de vidro garantem uma imersão total na paisagem envolvente, sem sacrificar o conforto.
+                        </p>
+<p>
+                            Totalmente climatizado, o ambiente foi projetado com rigor técnico para garantir conforto térmico e excelência acústica em qualquer estação do ano, permitindo que a gastronomia e a celebração assumam o protagonismo.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="border-b border-outline-variant pb-6 hover-ambient-shadow transition-shadow bg-surface p-4">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-size: 32px; font-variation-settings: 'FILL' 1;">group</span>
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Capacidade</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Até 450 convidados confortavelmente acomodados.</p>
+</div>
+<div class="border-b border-outline-variant pb-6 hover-ambient-shadow transition-shadow bg-surface p-4">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-size: 32px; font-variation-settings: 'FILL' 1;">ac_unit</span>
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Climatização</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sistema de ar-condicionado central de alta performance.</p>
+</div>
+<div class="border-b border-outline-variant pb-6 hover-ambient-shadow transition-shadow bg-surface p-4">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-size: 32px; font-variation-settings: 'FILL' 1;">landscape</span>
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Versatilidade</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Integração perfeita para casamentos em Haras e Fazendas.</p>
+</div>
+<div class="border-b border-outline-variant pb-6 hover-ambient-shadow transition-shadow bg-surface p-4">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-size: 32px; font-variation-settings: 'FILL' 1;">local_parking</span>
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Infraestrutura</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Estacionamento amplo, gerador próprio e cozinha industrial.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Galeria do Espaço</h2>
+<div class="w-16 h-[1px] bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[800px]">
+<!-- Large Feature Image -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden border border-outline-variant/30">
+<img alt="Event setup" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A striking wide-angle view of a luxury event hall prepared for a wedding reception. The scene exhibits a minimalist-luxury aesthetic with pristine white tablecloths, subtle burgundy napkins, and tall, sculptural floral arrangements. Light pours in through floor-to-ceiling glass windows, illuminating the rustic wooden beams overhead. The mood is highly elegant, serene, and exquisitely detailed, capturing the essence of high-end hospitality in a light-mode palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRZQY136dG3YATOxagl741_-pN0AuEdNOr3OnXnc3fqVdpx9MCiFrH34_pr5L22ru76TxDrfHRHt5DZpuhxJ-x13MJaw1-G5BsvEZ1Ih7bcS318YDt6o8POwKGMC4BT4NLfQhjCmnaTCMhrepzYLEH3kpAR94wymt_iM9IbjBpNW53L5tBX5gc8Qfc8CFLrNHwowqx1XM6Rb1SQ0xRRh4eEuJFnY74ZNi-cXRkLKjFli8ydQPmi9Fmi50h3dTC9F0KFwbsyEpM2-h2"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<!-- Top Right Square -->
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden border border-outline-variant/30">
+<img alt="Table setting detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed, editorial close-up of a high-end catering table setting. A fine porcelain plate is presented with a delicate menu card featuring refined typography. Sparkling crystal glassware catches natural light, alongside polished silver cutlery. The background softly blurs out an elegant event space. The overarching style is minimalist luxury, emphasizing pristine whites, subtle creams, and a sophisticated, inviting mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFqfx3T3xn5KBxO-_A_b1on3hmpIPlzz0JjvGWkCGzl-XRYPZszMmSxZHrdJ2w-pgEVAnQMSX2QqzAw0ma1sbsbmjuNGAsg2jP5RRvJL-krldM-1c4rXmtaE1oD8zQbjCikIMwODC7AYapONFqeZQtsCNx4r2scsBwRxNerMeyD1DaKrZ6LJGisKtpH9_Ah3gBCGlCuM6akH5jVq1wrQ6Rg6lgWuDIoQgx1f4gu0L4ZrkkjtVWIjr1-JqT_GBjeuYgNfYeRt5nBlkE"/>
+</div>
+<!-- Bottom Right Split 1 -->
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden border border-outline-variant/30">
+<img alt="Exterior architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An exterior perspective of a contemporary event venue blending seamlessly into a lush natural landscape. The architecture showcases clean lines, sleek dark framing, and expansive glass walls. The building emits a warm, inviting glow against a bright, slightly overcast sky. The image conveys a sense of exclusive, high-end design rooted in a minimalist aesthetic, highlighting the connection between modern structure and rustic surroundings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtaUgI5Ttdirkv6PYkkcWcx6P6uSr8jr0BrfJLujJmDaldFRg1EVIJvJHn7MKxump70o9KhyUqZv7JIaLUjBHFSMFo_PDSQTTwMwisZJKkNUmiGA1s_hpqAZ94OQRZfH-HhZKrQjhVovcjElxxggwllCLR8SI6O7YvKQoUtyilEnhNgNv97TKcH3upE20zwp1gLY6ZB5-ALwlpIQyHzk4aESgFSHai5kzKROTiJaDQoW2fJoqrtXjy8w05Eo6otYYI61ySmOudcCbP"/>
+</div>
+<!-- Bottom Right Split 2 -->
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden border border-outline-variant/30 bg-surface-container flex items-center justify-center p-8 text-center">
+<div>
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 40px; font-variation-settings: 'wght' 200;">celebration</span>
+<p class="font-body-md text-body-md text-on-surface italic">"A excelência não é um ato, mas um hábito servido à mesa."</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter bg-tertiary dark:bg-tertiary-container border-t border-outline/20">
+<div class="font-headline-md text-headline-md text-on-tertiary">
+            Lazzarini Buffet
+        </div>
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<p class="text-tertiary-fixed-dim">Buffet &amp; Eventos de Alto Padrão</p>
+<p class="text-tertiary-fixed-dim text-sm mt-4">© 2026 Lazzarini Buffet. Todos os direitos reservados.</p>
+</div>
+<div class="flex flex-col md:items-end gap-3 font-body-md text-body-md opacity-90 hover:opacity-100 transition-opacity">
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">Instagram</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">WhatsApp</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors" href="#">LinkedIn</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors " href="#">Política de Privacidade</a>
+</div>
+</footer>
+</body></html>

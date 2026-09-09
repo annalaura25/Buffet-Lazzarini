@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gastronomia - Lazzarini Buffet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "primary": "#610000",
+                        "surface-container-high": "#e9e8e7",
+                        "on-primary-fixed": "#410000",
+                        "inverse-primary": "#ffb4a8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "outline-variant": "#e3beb8",
+                        "surface-container-low": "#f5f3f3",
+                        "on-surface-variant": "#5a403c",
+                        "secondary-fixed-dim": "#c8c7b7",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "inverse-surface": "#303031",
+                        "secondary": "#5f5f52",
+                        "secondary-container": "#e2e0d0",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#434242",
+                        "surface-container": "#efeded",
+                        "surface-container-highest": "#e3e2e2",
+                        "surface": "#fbf9f9",
+                        "on-surface": "#1b1c1c",
+                        "outline": "#8e706b",
+                        "surface-variant": "#e3e2e2",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-bright": "#fbf9f9",
+                        "secondary-fixed": "#e5e3d3",
+                        "on-primary-fixed-variant": "#920703",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#636356",
+                        "on-primary-container": "#ff907f",
+                        "surface-tint": "#b52619",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2c2c2c",
+                        "on-secondary-fixed-variant": "#47473b",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#fbf9f9",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-secondary-fixed": "#1c1c12",
+                        "primary-container": "#8b0000",
+                        "on-tertiary-container": "#b1aeae",
+                        "tertiary-fixed": "#e5e2e1",
+                        "inverse-on-surface": "#f2f0f0",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "display-lg-mobile": ["Playfair Display", "serif"],
+                        "headline-md": ["Playfair Display", "serif"],
+                        "display-lg": ["Playfair Display", "serif"],
+                        "body-lg": ["Montserrat", "sans-serif"],
+                        "label-sm": ["Montserrat", "sans-serif"],
+                        "headline-lg": ["Playfair Display", "serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 253, 236, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(139, 0, 0, 0.1);
+        }
+
+        .ambient-hover {
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .ambient-hover:hover {
+            box-shadow: 0 10px 30px -10px rgba(139, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .hairline-bottom {
+            border-bottom: 1px solid rgba(139, 0, 0, 0.2);
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed italic">
+            Lazzarini Buffet
+        </div>
+<div class="hidden md:flex space-x-8 items-center font-body-md text-body-md uppercase tracking-widest">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="home.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed duration-300" href="gastronomia.html">Gastronomia</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="nossoespaco.html">Nosso Espaço</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="contato.html">Contato</a>
+</div>
+<button class="hidden md:block bg-primary-container text-on-primary px-6 py-3 font-label-sm uppercase tracking-wider hover:bg-primary transition-colors ambient-hover">
+             Reserve Agora
+        </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden bg-surface-container-high">
+<div class="absolute inset-0 z-0">
+<img alt="Lazzarini Buffet Gastronomic Experience" class="w-full h-full object-cover opacity-90 object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuR8U2WPuKLq9Ii0iUHrbQFplRgd48b3wBxSEzo6_skkY34MaKKyNlpwPZ52Uh_sg0dzaxTZ6YkRsJXXrTP0W6SSVjJSsT0mkNmYM--3Y9ZE20sgtQezDJs3pTXORsyLZRuY84_7V25eoq3J69ub_jW9qAQS59IBZaKRfsu199-lg3uZ6i_oEg6iiv2MQ_43nCEEKf2mNBNJ_ZWLwzDmw0mfEWpUqpL1hffLsI3_XV04zGPqem2LTa0PTMnNgIAY3ympeM2DdYWng4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-2xl mt-20">
+<h1 class="font-display-lg-mobile md:font-display-lg text-primary mb-6">A Arte da Gastronomia</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Experiências culinárias inesquecíveis, moldadas pelas tendências de 2025/2026, com foco em ilhas interativas e serviço de altíssimo padrão.</p>
+</div>
+</header>
+<!-- Gastronomic Islands (Bento Grid) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-primary uppercase tracking-widest block mb-4">Tendência 2025/2026</span>
+<h2 class="font-headline-lg md:text-[40px] text-on-surface">Ilhas Gastronômicas Interativas</h2>
+<div class="w-16 h-[1px] bg-outline mx-auto mt-8"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Feature: Seafood -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low ambient-hover min-h-[500px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<img alt="Seafood Station" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious high-end seafood station at a luxury catering event. Oysters, lobster, and tuna tartare displayed elegantly over crushed ice on a marble and copper tiered display. Warm, elegant ambient lighting typical of a high-end light-mode Mediterranean event. Rich burgundy accents and pristine white tablecloths in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk-kbx-nhfomUCITgDyGK_l2uE1YiP-gbycoku7vgwBUaxhd5XpHssV4kDOPixcrTSUffG8qDdqA6uDxsFZJo54qdcC31y8SqKX5J_dCW4TkbIPeN9B42dk5OGiiD-1ObXeBqE-dN8QrHtnMn-c4PE6tq9lzYGqozK_cxJILD6ZIzJ2lXXjevHrG-q4ks8S5GkUwfRiPiAu4eyKWsk_WAsZDfvkYZwarUFrwzLG-SIW1rGY4L0M3jtRyXVV2tT9BijveaC2ISO0oaR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 text-on-primary">
+<div class="inline-block bg-primary-container/80 backdrop-blur-sm px-3 py-1 mb-4 font-label-sm uppercase tracking-wider text-on-primary">Exclusividade</div>
+<h3 class="font-headline-md mb-3 text-white">Estação de Frutos do Mar</h3>
+<p class="font-body-md text-white/90 max-w-md">Ostras frescas, tartare de atum e lagostins servidos sob um design impecável de gelo e peças de cobre e mármore.</p>
+</div>
+</div>
+<!-- Pasta Station -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low ambient-hover min-h-[500px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<img alt="Pasta Station" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A chef tossing fresh pasta in a giant parmesan wheel at a luxury catering event. Rich, warm lighting highlighting the textures of the cheese and pasta. Elegant minimalist setting with subtle burgundy and gold accents in the background. High-end, light-mode hospitality aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTV-7uXLmW7qvqXsRu0YDlVLqtC63x0tv6cY51IOs5WOoAG5aQyzbksfY2rLe8_d-jotIy38_3kMkboCpp4jiDl6-pM9_pbz9PwM0V2BzRBcVB5DSNWUbUprNAJttkXhJmXnlIXhPo02Bi4S7vCqngXis6H9bk9HVWPoi2zdv6fycKuEGbPDREE2J20rrBUeym_kdKvl1-28ee3JhEDvdrzqUqn3QZinQ2n4ngxxEfcAegt42cNkCy-9Cs9USg1Z-L0h-KuuDjc-Y1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 text-on-primary">
+<h3 class="font-headline-md mb-3 text-white">Massa no Grana Padano</h3>
+<p class="font-body-md text-white/90">Finalização ao vivo de massas artesanais dentro do queijo, proporcionando um espetáculo visual e olfativo aos convidados.</p>
+</div>
+</div>
+<!-- Late Night Snacks -->
+<div class="md:col-span-6 group relative overflow-hidden bg-surface-container-low ambient-hover min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<img alt="Late Night Snacks" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Gourmet late-night snacks presented elegantly on minimalist white plates. Mini artisanal burgers and truffle fries. Clean, bright, light-mode aesthetic with soft, diffused lighting. High-contrast minimalist luxury presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb50qkC-f0T6OMQJpYuJt0xNeRue9-PgVT9xe68MvNMh-TdKWWZrH0vPaUrAzWndlp6C16myLloEMTa4YxjJdFBwMo-vXbDLFeCUyw5WsfKHdvOOZKGQp-TPViBRKeAj_jWdmkSz92sOqtdRaaWi1EkAuO0TleUWmr33hQwdakisqfjjWvEHRIWWs1W4EOZ4Ap2Ua951Ff54ROVc6AlNMPH6Y_8lTwacQqVtZRCBL78xcXF1YtIUyVeAwivEmKEKERBbqxj6ytQXDq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 text-on-primary">
+<h3 class="font-headline-md mb-3 text-white">Lanchinhos da Madrugada</h3>
+<p class="font-body-md text-white/90">A tendência absoluta para 2025: mini-hambúrgueres gourmet, batatas trufadas e milkshakes servidos na pista de dança.</p>
+</div>
+</div>
+<!-- Tableware Focus -->
+<div class="md:col-span-6 glass-panel p-10 flex flex-col justify-center ambient-hover">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">diamond</span>
+<h3 class="font-headline-md text-primary mb-4">Serviço &amp; Louçaria</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Nosso compromisso com a excelência vai além do sabor. O serviço franco-americano é executado com precisão coreográfica. Utilizamos louçaria de design exclusivo, com bordas douradas e taças de cristal Baccarat, garantindo que cada detalhe reflita a sofisticação do seu evento.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest hover:text-on-surface-variant transition-colors group" href="#">
+                    Descubra o Acervo
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter bg-tertiary dark:bg-tertiary-container border-t border-outline/20">
+<div class="font-headline-md text-headline-md text-on-tertiary">
+            Lazzarini Buffet
+        </div>
+<div class="flex flex-col space-y-4">
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 font-body-md text-body-md" href="#">Instagram</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 font-body-md text-body-md" href="#">WhatsApp</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 font-body-md text-body-md" href="#">LinkedIn</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 font-body-md text-body-md" href="#">Política de Privacidade</a>
+</div>
+<div class="font-body-md text-body-md text-on-tertiary dark:text-on-tertiary-container md:text-right">
+            © 2026 Lazzarini Buffet &amp; Eventos de Alto Padrão.
+        </div>
+</footer>
+</body></html>

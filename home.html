@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lazzarini Buffet - A Arte de Celebrar com Excelência</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "primary": "#610000",
+                        "surface-container-high": "#e9e8e7",
+                        "on-primary-fixed": "#410000",
+                        "inverse-primary": "#ffb4a8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "outline-variant": "#e3beb8",
+                        "surface-container-low": "#f5f3f3",
+                        "on-surface-variant": "#5a403c",
+                        "secondary-fixed-dim": "#c8c7b7",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "inverse-surface": "#303031",
+                        "secondary": "#5f5f52",
+                        "secondary-container": "#e2e0d0",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#434242",
+                        "surface-container": "#efeded",
+                        "surface-container-highest": "#e3e2e2",
+                        "surface": "#fbf9f9",
+                        "on-surface": "#1b1c1c",
+                        "outline": "#8e706b",
+                        "surface-variant": "#e3e2e2",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-bright": "#fbf9f9",
+                        "secondary-fixed": "#e5e3d3",
+                        "on-primary-fixed-variant": "#920703",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#636356",
+                        "on-primary-container": "#ff907f",
+                        "surface-tint": "#b52619",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2c2c2c",
+                        "on-secondary-fixed-variant": "#47473b",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#fbf9f9",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-secondary-fixed": "#1c1c12",
+                        "primary-container": "#8b0000",
+                        "on-tertiary-container": "#b1aeae",
+                        "tertiary-fixed": "#e5e2e1",
+                        "inverse-on-surface": "#f2f0f0",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #fbf9f9; color: #1b1c1c; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(139, 0, 0, 0.1);
+        }
+        .luxury-border { border-bottom: 1px solid rgba(139, 0, 0, 0.2); }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(139, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out md:px-margin-desktop px-margin-mobile">
+<div class="flex items-center gap-4">
+<img alt="Lazzarini Buffet Logo" class="h-12 w-12 object-contain" src=""/>
+<a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed italic md:block hidden" href="#">Lazzarini Buffet</a>
+</div>
+<nav class="hidden md:flex gap-8 items-center font-body-md text-body-md uppercase tracking-widest">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed duration-300" href="home.html">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="gastronomia.html">Gastronomia</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="nossoespaco.html">Nosso Espaço</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="contato.html">Contato</a>
+</nav>
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary px-6 py-3 uppercase tracking-wider text-label-sm font-label-sm hover:bg-primary transition-colors rounded-DEFAULT" href="#tasting">
+            Reserve Agora
+        </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Elegant dining table setup with dark red tablecloth, gold accents, floral centerpieces, crystal glasses, and guests in formal attire enjoying a sophisticated event." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBldibrJub6ObNYF4RmWPorr3bEqDOXmy__Y7ZmmRcw5hJBxBNHDrEw5PGZ4IMkQFxmhKybDYcPMtARV72QcdL7SVVWZVV4zHdZVBCCO7Go3svhyk9Scgw7JZvbRvK6lLQjG1Ksfrv179XFnvg03EyAkHSHNTxj9PIueWJLLrwRtkMS5CQMN3gtqWObWELr8t3uzzudeUUIVNjdWpt0KlncGq5m1tbhdjwWLH5PxQVOVjBFWRCe6h1o_iGhNdqiTYeffYnqpyn6JeoJ"/>
+<div class="absolute inset-0 bg-surface/30 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto glass-panel p-12 rounded-lg mt-12">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">A Arte de Celebrar com Excelência</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto">
+                    Nossa filosofia 'Turn-Key' garante que cada detalhe do seu evento seja orquestrado com precisão absoluta, do primeiro gole ao último sorriso. Um serviço completo, impecável e inesquecível.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="inline-flex items-center justify-center border border-primary text-primary px-8 py-4 uppercase tracking-wider text-label-sm font-label-sm hover:bg-primary/5 transition-colors rounded-DEFAULT" href="#services">
+                        Descubra Nossos Serviços
+                    </a>
+</div>
+</div>
+</section>
+<!-- Nossos Serviços Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="services">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Nossos Serviços</h2>
+<div class="w-16 h-px bg-outline mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Casamentos -->
+<div class="group relative overflow-hidden bg-surface hover-lift rounded-DEFAULT">
+<div class="aspect-[4/5] relative">
+<img alt="Elegant wedding cake decorated with fresh flowers in a luxury venue setting." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully decorated multi-tiered wedding cake with delicate white frosting and fresh, elegant flowers. The setting is a luxurious wedding reception hall with soft, romantic lighting. The style is sophisticated, minimalist-luxury, emphasizing high-end culinary presentation. The color palette features whites, creams, and subtle floral tones, reflecting a premium catering service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkkSR1QHwsv_rz8Z1uDV48knFyE7WPbd8q3sqwIawKuAs-9bhdTQTgbaaMqzZfughmRNITOStySgvxT74-N6xu6XYe8ez-tcB9VqKGLYQEsTpXqINsMqLzfHZjKdLr82HanoiHcT_yTskwox44CbqY2X-Dil0ltYrUNeRJ8YXdS9p7gc9iDWhNCar1UNGSTJH5w5IwdIJUMjV-wPW-3qVxCMYq4jw1nwcTI_JtAPtupV1vjlwCWDbjTiNSMwYJQou9QNhfpvgQmRR_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-surface/90 backdrop-blur-sm luxury-border">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Casamentos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Celebrações monumentais desenhadas sob medida para o seu grande dia.</p>
+</div>
+</div>
+<!-- 15 Anos -->
+<div class="group relative overflow-hidden bg-surface hover-lift rounded-DEFAULT md:translate-y-12">
+<div class="aspect-[4/5] relative">
+<img alt="Vibrant and elegant cocktail drinks being served at a lively party event." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of sophisticated, colorful cocktail drinks with delicate garnishes arranged on a silver tray. The background is a gently blurred, elegant party setting with warm, celebratory lighting. The style captures youthful elegance and high-end event service, perfect for a Sweet 16 or 15th birthday celebration. The mood is festive yet refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2UbvFYyoA0wOEAnikfg7bWNCkSGtC1LOxdNK4mTTJrrhVyOb3zMaPTqDHa4wPw4TSfjZrG_eEEnONirSeDAPTxvaF9oloUk1wTcmias7l54aUXixXgT5v6qMDWDPMn0-EWl9eZZyd3Jj3DEHxWXOoJyOtxmMedRE9p3kNJa-nh_oI85LEVYJiu9V5nzA9VPKdmINoXzTOVvl5blGlwfYykWtWPQdIOndQQicGQWZQrtmlPIDEuDx9RjODojYLsRcGdZwiISUOLUHZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-surface/90 backdrop-blur-sm luxury-border">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">15 Anos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Momentos mágicos e vibrantes com cardápios que encantam gerações.</p>
+</div>
+</div>
+<!-- Corporativos -->
+<div class="group relative overflow-hidden bg-surface hover-lift rounded-DEFAULT">
+<div class="aspect-[4/5] relative">
+<img alt="Refined corporate dining setting with precise table arrangements and modern culinary presentation." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously arranged corporate dining table set for a high-level executive lunch. Clean lines, minimalist white plates, and subtle architectural elements define the space. The lighting is crisp and professional, highlighting the premium quality of the culinary presentation. The aesthetic is modern, serious, and luxurious, conveying impeccable corporate hospitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRW2aEFAVW4cVYKCIGnEdPsQvnaXUMWxMUP_HKhkKpnH9GiMuQ-NWh4PB7ucG--cRC5CymNqY978So7bfwph4lQVCO6Gvk_zbAfVtYq4eRs9FkLWvrbBVnYRTKYIRBcMp-zDnq6rgJnteYhTXsKco4Wp3JtrZXW4O9-tJumby_mW_Ncp9KzkXrXWAE2yDXWyIiukUwe3OheyOH8tuDaLzp8f9pz5TRpgDcOgfUWqo0tCm4FZ7gLrNc3oQ9yEJqP1JRR61Kb2-GVnFH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-surface/90 backdrop-blur-sm luxury-border">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Corporativos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Eventos empresariais de alto padrão, refletindo o prestígio da sua marca.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ilhas Gastronômicas -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 relative">
+<img alt="Gourmet 'Gastronomic Island' with interactive food stations, artisanal seafood, and sophisticated appetizers. High-end catering presentation, vibrant colors, shallow depth of field." class="w-full h-auto rounded-lg shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuR8U2WPuKLq9Ii0iUHrbQFplRgd48b3wBxSEzo6_skkY34MaKKyNlpwPZ52Uh_sg0dzaxTZ6YkRsJXXrTP0W6SSVjJSsT0mkNmYM--3Y9ZE20sgtQezDJs3pTXORsyLZRuY84_7V25eoq3J69ub_jW9qAQS59IBZaKRfsu199-lg3uZ6i_oEg6iiv2MQ_43nCEEKf2mNBNJ_ZWLwzDmw0mfEWpUqpL1hffLsI3_XV04zGPqem2LTa0PTMnNgIAY3ympeM2DdYWng4"/>
+<div class="absolute -bottom-6 -right-6 bg-surface p-6 rounded-DEFAULT border border-outline/20 hidden md:block">
+<span class="font-headline-md text-headline-md text-primary block">Exclusividade</span>
+<span class="font-body-md text-body-md text-on-surface-variant">em cada detalhe</span>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-widest rounded-sm mb-6">Especialidade</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Ilhas Gastronômicas</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Nossas ilhas são desenhadas para oferecer uma experiência interativa e multissensorial. Desde queijos artesanais e charcutaria fina até estações de frutos do mar frescos, criamos pontos de encontro onde a gastronomia se torna o centro das atenções.
+                    </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 text-[20px]">diamond</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Curadoria rigorosa de ingredientes premium.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 text-[20px]">diamond</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Apresentação cênica e design de pratos.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 text-[20px]">diamond</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Serviço interativo liderado por chefs experientes.</span>
+</li>
+</ul>
+<a class="inline-flex items-center text-primary font-label-sm text-label-sm uppercase tracking-widest hover:text-primary-container transition-colors group" href="#menu">
+                        Ver Menus Completos 
+                        <span class="material-symbols-outlined ml-2 transform group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-tertiary relative overflow-hidden" id="tasting">
+<div class="absolute inset-0 opacity-10">
+<img alt="Abstract texture of fine dining table setting with subtle lighting." class="w-full h-full object-cover" data-alt="A subtle, abstract macro photography of elegant crystal glassware and silver cutlery on a dark textured tablecloth. The lighting is moody and sophisticated, highlighting the reflective surfaces and refined textures. This serves as a deep, elegant background texture for a luxury hospitality brand. The overall tone is dark, warm, and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD6N-OTHBFVAzet_FesVfioHWM47QIObj19mvwlOVTtm2jI2xAbacJrxvXM8v3AZyuFpgCelrq05Pi5pUigfxUHEYpRlca8BgiypNHg8nbprFzh50W6FaGiLdYjTcznsboJvEpLE2OEkCSRCV1F9DAyqALYBNmtABds5SYsS6t72RQ-mrj4-C05bZvj9eCCfFR4F_IQyadtxXc_R9958MZjsl6PJs5yg6H9TYZJsr5JacMKnqAYJ_r9v-eMq1LvHUYRys2A5ereWhL"/>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto text-center">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-tertiary mb-6">Agende uma Degustação</h2>
+<p class="font-body-lg text-body-lg text-tertiary-fixed-dim mb-10">
+                    Permita-nos apresentar a qualidade e a sofisticação que farão do seu evento um marco inesquecível.
+                </p>
+<form class="max-w-md mx-auto space-y-6">
+<div>
+<input class="w-full bg-transparent border-0 border-b border-tertiary-fixed-dim/50 text-on-tertiary placeholder:text-tertiary-fixed-dim font-body-md focus:ring-0 focus:border-primary-fixed transition-colors pb-2 px-0" placeholder="NOME COMPLETO" type="text"/>
+</div>
+<div>
+<input class="w-full bg-transparent border-0 border-b border-tertiary-fixed-dim/50 text-on-tertiary placeholder:text-tertiary-fixed-dim font-body-md focus:ring-0 focus:border-primary-fixed transition-colors pb-2 px-0" placeholder="E-MAIL" type="email"/>
+</div>
+<div>
+<input class="w-full bg-transparent border-0 border-b border-tertiary-fixed-dim/50 text-on-tertiary placeholder:text-tertiary-fixed-dim font-body-md focus:ring-0 focus:border-primary-fixed transition-colors pb-2 px-0" placeholder="TELEFONE" type="tel"/>
+</div>
+<button class="w-full bg-primary-fixed text-on-primary-fixed px-8 py-4 uppercase tracking-wider text-label-sm font-label-sm hover:bg-white transition-colors rounded-DEFAULT mt-8" type="button">
+                        Solicitar Contato
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter bg-tertiary dark:bg-tertiary-container border-t border-outline/20">
+<div class="md:col-span-1 flex flex-col justify-center">
+<span class="font-headline-md text-headline-md text-on-tertiary mb-4">Lazzarini Buffet</span>
+<p class="font-body-md text-body-md text-tertiary-fixed-dim">
+                © 2026 Lazzarini Buffet &amp; Eventos de Alto Padrão.
+            </p>
+</div>
+<div class="md:col-span-2 flex flex-col md:flex-row justify-end items-start md:items-center gap-8 font-body-md text-body-md">
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Instagram</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">WhatsApp</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">LinkedIn</a>
+<a class="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Política de Privacidade</a>
+</div>
+</footer>
+</body></html>
